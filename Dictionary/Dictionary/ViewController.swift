@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     var Dic = [1:["A","B"]]
     var Dic2 : [Int : [String]] = [:]
     var Dic3 = [1:["AAA":"BBB"]]
+    var Dic4 = ["김동영":["주소":"1211","전화번호":"010-1111-1111"]]
     @IBOutlet var lblText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
             NSLog("DicKey : "+String(DicKey)+", DicValue : "+DicValue[0]+", "+DicValue[1])
         }
         NSLog("Dic3[1] value's key : "+String(Dic3[1]!.keys.randomElement()!)+"Dic3[1] value's value : "+String(Dic3[1].values.randomElement()!))
-        
+        NSLog("Dic4[key]'s 주소 : "+Dic4["김동영"]!["주소"]!+" / Dic4[key]'s 전화번호 : "+Dic4["김동영"]!["전화번호"]!)
     }
 
 

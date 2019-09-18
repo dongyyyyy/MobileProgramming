@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     var Dic = [1:["A","B"]]
     var Dic2 : [Int : [String]] = [:]
-
+    var Dic3 = [1:["AAA":"BBB"]]
     @IBOutlet var lblText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         for (DicKey, DicValue) in Dic2{
             NSLog("DicKey : "+String(DicKey)+", DicValue : "+DicValue[0]+", "+DicValue[1])
         }
+        NSLog("Dic3[1] value's key : "+String(Dic3[1]!.keys.randomElement()!)+"Dic3[1] value's value : "+String(Dic3[1].values.randomElement()!))
         
     }
 
